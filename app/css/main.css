@@ -1,0 +1,180 @@
+@font-face {
+  font-family: 'Circe';
+  src: local("Circe Regular"), local("Circe-Regular"), url("../fonts/Circe-Regular.woff2") format("woff2"), url("../fonts/Circe-Regular.woff") format("woff"), url("../fonts/Circe-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Circe Bold';
+  src: url("../fonts/Circe-Bold.eot");
+  src: url("../fonts/Circe-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Circe-Bold.woff") format("woff"), url("../fonts/Circe-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  font-family: 'Circe', sans-serif; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.container {
+  height: 100%;
+  width: 100%;
+  max-width: 1340px;
+  padding: 0 20px;
+  margin: 0 auto; }
+
+.header {
+  height: 240px; }
+  .header__top {
+    height: 40px;
+    font-size: 13px;
+    border-bottom: 1px solid #eceaed; }
+  .header__menu {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #302a31; }
+  .header__menu_left {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 50%; }
+  .header__menu_right {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 30%; }
+  .header__item_left {
+    list-style-type: none; }
+    .header__item_left:hover {
+      color: #c1a067; }
+  .header__item_right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 41px;
+    list-style-type: none;
+    border-left: 1px solid #eceaed; }
+    .header__item_right:hover {
+      color: #c1a067; }
+  .header__favorites {
+    position: relative; }
+  .header__favorites_items {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 5px;
+    right: 25px;
+    font-family: 'Circe Bold', sans-serif;
+    font-size: 10px;
+    border-radius: 50%;
+    background-color: #c1a067;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff; }
+  .header__mid {
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .header__elems {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start; }
+  .header__search {
+    margin-top: 30px;
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative; }
+    .header__search::before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: -15px;
+      width: inherit;
+      height: 2px;
+      background-color: #c1a067; }
+    .header__search input {
+      width: 750px;
+      font-size: 14px;
+      letter-spacing: 1.4;
+      font-weight: 400;
+      text-transform: uppercase;
+      border: none !important;
+      outline: none !important;
+      background-color: transparent !important; }
+  .header__info {
+    width: 100%;
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Circe Bold', sans-serif; }
+  .header__curt {
+    height: 90px;
+    width: 85px;
+    background-color: #c1a067;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; }
+  .header__curt_items {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    font-size: 10px;
+    font-family: 'Circe Bold', sans-serif;
+    color: #ffffff; }
+  .header__bot {
+    height: 60px;
+    background-color: #302a31; }
+  .header__service {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .header__service_menu {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    font-size: 16px;
+    color: #ffffff; }
+  .header__service_item {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; }
+    .header__service_item:hover {
+      color: #c1a067; }
+  .header__sale {
+    width: 160px;
+    background-color: #c16774; }

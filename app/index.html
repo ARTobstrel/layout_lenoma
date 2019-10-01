@@ -14,53 +14,76 @@
 <header class="header">
 
     <div class="header__top">
-        <ul class="header__menu">
-            <li class="header__menu_item">о магазине</li>
-            <li class="header__menu_item">оплата</li>
-            <li class="header__menu_item">доставка</li>
-            <li class="header__menu_item">отзывы</li>
-            <li class="header__menu_item">новости</li>
-            <li class="header__menu_item">статьи</li>
-            <li class="header__menu_item">контакты</li>
-            <li class="header__menu_item">личный кабинет</li>
-            <li class="header__menu_item">избранное</li>
-        </ul>
+        <div class="container">
+            <div class="header__menu">
+                <ul class="header__menu_left">
+                    <li class="header__item_left"><a href="#">О магазине</a></li>
+                    <li class="header__item_left"><a href="#">Оплата</a></li>
+                    <li class="header__item_left"><a href="#">Доставка</a></li>
+                    <li class="header__item_left"><a href="#">Отзывы</a></li>
+                    <li class="header__item_left"><a href="#">Новости</a></li>
+                    <li class="header__item_left"><a href="#">Статьи</a></li>
+                    <li class="header__item_left"><a href="#">Контакты</a></li>
+                </ul>
+                <ul class="header__menu_right">
+                    <li class="header__item_right"><a href="#">Личный кабинет</a></li>
+                    <li class="header__item_right header__favorites">
+                        <a href="#">Избранное</a>
+                        <div class="header__favorites_items">2</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 
-    <div class="header__mid">
-        <img src="img/header/logo.png" alt="logo" class="header__logo">
+    <div class="header__mid container">
+        <a href="/"><img src="img/header/logo.png" alt="logo" class="header__logo"></a>
         <div class="header__elems">
             <div class="header__search">
                 <input type="text" placeholder="поиск по каталогу товаров" autocomplete="off">
-                <img src="#" alt="" class="header__search_loupe">
+                <a href="#"><img src="img/header/loupe.png" alt="" class="header__search_loupe"></a>
             </div>
             <div class="header__info">
-                <span class="header__phone">+7 /495/ 542-05-95</span>
-                <img src="img/header/phone.png" alt="" class="header__callback_img">
-                <span class="header__callback">обратный звонок</span>
-                <img src="img/header/mail.png" alt="" class="header__email_img">
-                <span class="header__email">info@lenoma.ru</span>
-                <img src="img/header/time.png" alt="" class="header__worktime_img">
-                <span class="header__worktime">пн—пт 9.00—21.00</span>
-
+                <div class="header__info_elem">
+                    <span class="header__phone">+7 /495/ 542-05-95</span>
+                </div>
+                <div class="header__info_elem">
+                    <img src="img/header/phone.png" alt="" class="header__callback_img">
+                    <a href="tel:+74955420595" class="header__callback">обратный звонок</a>
+                </div>
+                <div class="header__info_elem">
+                    <img src="img/header/mail.png" alt="" class="header__email_img">
+                    <a href="mailto:info@lenoma.ru" class="header__email">info@lenoma.ru</a>
+                </div>
+                <div class="header__info_elem">
+                    <img src="img/header/time.png" alt="" class="header__worktime_img">
+                    <span class="header__worktime">пн—пт 9.00—21.00</span>
+                </div>
             </div>
         </div>
-        <img src="img/header/curt.png" alt="curt" class="header__curt">
+        <div class="header__curt">
+            <img src="img/header/curt.png" alt="curt">
+            <div class="header__curt_items">4</div>
+        </div>
     </div>
 
     <div class="header__bot">
-        <ul class="header__service">
-            <li class="header__service_item"></li>
-            <li class="header__service_item"></li>
-            <li class="header__service_item"></li>
-            <li class="header__service_item"></li>
-            <li class="header__service_item"></li>
-            <li class="header__service_item"></li>
-            <li class="header__service_item"></li>
-            <li class="header__service_item"></li>
-            <li class="header__service_item"></li>
-        </ul>
-        <span class="headr__sale">sale</span>
+        <div class="container">
+            <div class="header__service">
+                <ul class="header__service_menu">
+                    <li class="header__service_item">Акция</li>
+                    <li class="header__service_item">Парфюмерия</li>
+                    <li class="header__service_item">Новинки</li>
+                    <li class="header__service_item">Макияж</li>
+                    <li class="header__service_item">Уход за кожей</li>
+                    <li class="header__service_item">Уход за волосами</li>
+                    <li class="header__service_item">Для мужчин</li>
+                    <li class="header__service_item">Organic</li>
+                    <li class="header__service_item">Подарки</li>
+                    <li class="header__service_item header__sale">Sale</li>
+                </ul>
+            </div>
+        </div>
     </div>
 
 </header>
