@@ -122,6 +122,7 @@ a {
     right: 25px;
     font-family: 'Circe Bold', sans-serif;
     font-size: 10px;
+    line-height: 1px;
     border-radius: 50%;
     background-color: #c1a067;
     display: flex;
@@ -365,7 +366,7 @@ a {
     margin: 0 auto;
     width: 420px;
     font-family: 'Circe Bold', sans-serif;
-    font-size: 36px;
+    font-size: 28px;
     letter-spacing: .9px;
     text-align: center;
     text-transform: uppercase; }
@@ -464,7 +465,7 @@ a {
     margin: 0 auto;
     width: 420px;
     font-family: 'Circe Bold', sans-serif;
-    font-size: 36px;
+    font-size: 28px;
     letter-spacing: .9px;
     text-align: center;
     text-transform: uppercase; }
@@ -563,7 +564,7 @@ a {
     margin: 0 auto;
     width: 420px;
     font-family: 'Circe Bold', sans-serif;
-    font-size: 36px;
+    font-size: 28px;
     letter-spacing: .9px;
     text-align: center;
     text-transform: uppercase; }
@@ -646,3 +647,63 @@ a {
     order: 1; }
   .special .item_sale .special__item_price span:nth-child(3) {
     order: 3; }
+
+.brands {
+  height: 570px;
+  width: 100%; }
+  .brands__content {
+    height: 100%;
+    width: 100%;
+    max-width: 1340px; }
+  .brands__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+    width: 420px;
+    font-family: 'Circe Bold', sans-serif;
+    font-size: 28px;
+    letter-spacing: .9px;
+    text-align: center;
+    text-transform: uppercase; }
+    .brands__title::after {
+      content: '';
+      display: block;
+      margin-top: 25px;
+      text-align: center;
+      width: 420px;
+      height: 2px;
+      background-color: #c1a067; }
+  .brands__title_all {
+    font-family: 'Circe Bold', sans-serif;
+    font-size: 12px;
+    margin: 32px auto;
+    color: #c1a067;
+    text-align: center;
+    text-transform: uppercase; }
+  .brands__box {
+    width: 100;
+    height: 100%;
+    display: flex;
+    flex-direction: column; }
+  .brands__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .brands__item img {
+    max-width: 100%; }
+  .brands__other {
+    margin-top: 46px;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 16px;
+    color: #302a31; }
+  .brands__other_column {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
