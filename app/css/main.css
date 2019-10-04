@@ -213,9 +213,39 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer; }
+    cursor: pointer;
+    position: relative; }
     .header__service_item:hover {
       color: #c1a067; }
+      .header__service_item:hover .dropdown_menu {
+        display: block;
+        opacity: 1; }
+  .header .dropdown_menu {
+    display: none;
+    position: absolute;
+    min-width: 256px;
+    height: auto;
+    padding: 28px;
+    background-color: #fff;
+    border-top: 4px solid #c1a067;
+    color: #000;
+    top: 100%;
+    left: -28px;
+    z-index: 10;
+    opacity: 0;
+    transition: all .5s ease; }
+    .header .dropdown_menu ul {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      list-style-type: none; }
+      .header .dropdown_menu ul li {
+        margin-bottom: 10px; }
+      .header .dropdown_menu ul li:nth-last-child(1) {
+        margin: 0; }
+      .header .dropdown_menu ul li:hover {
+        color: #c1a067; }
   .header__sale {
     width: 160px;
     background-color: #c16774; }
