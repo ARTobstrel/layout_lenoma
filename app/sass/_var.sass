@@ -1,0 +1,115 @@
+//Colors
+$background-main: #fff
+$borders: #eceaed
+$hover-color1: #c1a067
+$hover-color2: #cfad73
+$grey-color: #302a31
+$pink-color: #c16774
+$arrow: #ebeaea
+$color_white: #fff
+
+//Mixins
+@mixin arrow
+  width: 24px
+  height: 24px
+  border: 3px solid $arrow
+  border-bottom: none
+  border-right: none
+  position: absolute
+  &:hover
+    border: 3px solid $hover-color1
+    border-bottom: none
+    border-right: none
+
+@mixin item_title
+  display: flex
+  flex-direction: column
+  justify-content: flex-start
+  align-items: center
+  margin: 0 auto
+  width: 420px
+  font-family: 'Circe Bold', sans-serif
+  font-size: 28px
+  letter-spacing: .9px
+  line-height: 1.3em
+  text-align: center
+  text-transform: uppercase
+
+@mixin item_title_line
+  content: ''
+  display: block
+  margin-top: 25px
+  text-align: center
+  width: 420px
+  height: 2px
+  background-color: $hover-color1
+
+@mixin item_img
+  width: 260px
+  height: 260px
+  display: flex
+  justify-content: center
+  align-items: center
+  img
+    max-width: 100%
+
+@mixin item_sale
+  content: 'sale'
+  position: absolute
+  top: 0
+  left: 0
+  width: 47px
+  height: 22px
+  background-color: $pink-color
+  color: $color_white
+  text-transform: uppercase
+  line-height: 1px
+  letter-spacing: 1.2px
+  font-size: 12px
+  display: flex
+  justify-content: center
+  align-items: center
+  margin-left: -30px
+
+*,
+*:before,
+*:after
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+  //line-height: 1px
+
+html, body
+  height: 100%
+  width: 100%
+  background-color: $background-main
+  font-family: 'Circe', sans-serif
+
+a
+  text-decoration: none
+  color: inherit
+
+.container
+  height: 100%
+  width: 100%
+  max-width: 1340px
+  padding: 0 20px
+  margin: 0 auto
+  position: relative
+
+.d-flex
+  display: flex
+  justify-content: center
+  align-items: center
+
+.arrow_left
+  @include arrow
+  left: 0
+  top: 50%
+  transform: rotate(315deg)
+
+.arrow_right
+  @include arrow
+  right: 0
+  top: 50%
+  transform: rotate(135deg)

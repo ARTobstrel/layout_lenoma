@@ -1,0 +1,79 @@
+.new_items
+  height: 632px
+  width: 100%
+
+  &__content
+    height: 100%
+    width: 100%
+    max-width: 1340px
+
+  &__title
+    @include item_title
+
+    &::after
+      @include item_title_line
+
+  &__items
+    margin-top: 70px
+    display: flex
+    justify-content: space-between
+
+  &__item
+    border-right: 1px solid $borders
+    flex-basis: 25%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+  &__item:nth-last-child(1)
+    border: none
+
+  &__item_img
+    @include item_img
+
+  &__item_title
+    margin-top: 36px
+    font-size: 16px
+    text-transform: uppercase
+
+  &__item_discription
+    color: $grey-color
+    margin-top: 25px
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    font-size: 13px
+    span
+      line-height: 1.61em
+
+  &__item_price
+    font-size: 13px
+    margin-top: 16px
+    display: flex
+
+  .price_sale
+    display: none
+
+  .item_sale
+
+    .new_items__item_img
+      position: relative
+
+      &::after
+        @include item_sale
+
+    .price_sale
+      display: inline
+
+    .new_items__item_price
+      span:nth-child(2)
+        color: $pink-color
+        text-decoration: line-through
+      span:nth-child(1)
+        order: 2
+      span:nth-child(2)
+        order: 1
+      span:nth-child(3)
+        order: 3

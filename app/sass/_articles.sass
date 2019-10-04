@@ -1,0 +1,127 @@
+.articles_news
+  height: 830px
+  width: 100%
+
+  h2, p, span
+    line-height: 1.5em
+
+  &__title
+    @include item_title
+
+    &::after
+      @include item_title_line
+
+  &__box
+    padding-top: 50px
+    width: 100%
+    height: auto
+    display: flex
+    justify-content: space-between
+
+.articles
+  height: 600px
+  width: 590px
+
+  &__items
+    height: 100%
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    justify-content: space-around
+
+  &__item
+    display: flex
+    flex-direction: column
+    height: 160px
+    width: 590px
+    border-bottom: 1px solid $borders
+    cursor: pointer
+    &:hover
+      text-decoration: underline
+
+  &__title
+    font-size: 16px
+    text-transform: uppercase
+    letter-spacing: 0.4px
+
+  &__date
+    margin: 10px 0
+    font-size: 13px
+    color: $hover-color1
+
+  &__text
+    font-size: 14px
+    color: $grey-color
+
+  &__more
+    display: block
+    font-family: 'Circe Bold', sans-serif
+    font-size: 12px
+    letter-spacing: 1.4px
+    line-height: 1.7em
+    text-transform: uppercase
+    color: $hover-color1
+    text-align: center
+
+.news
+  height: 645px
+  width: 610px
+
+  &__items
+    height: 100%
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+
+  &__item
+    position: relative
+    height: 186px
+    width: 600px
+    display: flex
+    justify-content: flex-end
+    cursor: pointer
+
+    &:nth-child(2)
+      justify-content: flex-start
+
+    &:hover
+      text-decoration: underline
+
+  .item_img
+    height: 185px
+    width: 252px
+    position: absolute
+    top: 0
+    left: 0
+    z-index: -1
+    img
+      max-width: 100%
+
+  .item_img_second
+    height: 185px
+    width: 252px
+    position: absolute
+    top: 0
+    right: 0
+    z-index: -1
+    img
+      max-width: 100%
+
+  &__item_box
+    width: 400px
+    height: 185px
+    display: flex
+    flex-direction: column
+
+  &__more
+    display: block
+    font-family: 'Circe Bold', sans-serif
+    font-size: 12px
+    letter-spacing: 1.4px
+    line-height: 1.7em
+    text-transform: uppercase
+    color: $hover-color1
+    text-align: center

@@ -1,0 +1,204 @@
+.header
+  height: 240px
+
+  &__top
+    height: 40px
+    font-size: 13px
+    border-bottom: 1px solid #eceaed
+
+  &__menu
+    height: 100%
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    color: #302a31
+
+  &__menu_left
+    height: 100%
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+    max-width: 50%
+
+  &__menu_right
+    height: 100%
+    display: flex
+    justify-content: flex-end
+    align-items: center
+    max-width: 30%
+
+  &__item_left
+    list-style-type: none
+    &:hover
+      color: $hover-color1
+
+  &__item_right
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 100%
+    padding: 0 41px
+    list-style-type: none
+    border-left: 1px solid #eceaed
+    &:hover
+      color: $hover-color1
+
+  &__favorites
+    position: relative
+
+  &__favorites_items
+    position: absolute
+    width: 16px
+    height: 16px
+    top: 5px
+    right: 25px
+    font-family: 'Circe Bold', sans-serif
+    font-size: 10px
+    line-height: 1px
+    border-radius: 50%
+    background-color: $hover-color1
+    display: flex
+    justify-content: center
+    align-items: center
+    color: #ffffff
+
+
+  &__mid
+    height: 140px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  &__logo
+
+  &__elems
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+
+  &__search
+    margin-top: 30px
+    max-width: 800px
+    width: 100%
+    display: flex
+    justify-content: space-between
+    position: relative
+    &::before
+      content: ''
+      display: block
+      position: absolute
+      left: 0
+      bottom: -15px
+      width: inherit
+      height: 2px
+      background-color: $hover-color1
+    input
+      width: 750px
+      font-size: 14px
+      letter-spacing: 1.4px
+      font-weight: 400
+      text-transform: uppercase
+      border: none !important
+      outline: none !important
+      background-color: transparent !important
+
+  &__info
+    width: 100%
+    margin-top: 55px
+    display: flex
+    justify-content: space-between
+    font-family: 'Circe Bold', sans-serif
+
+
+  &__info_elem
+    img
+      margin-right: 14px
+
+  &__cart
+    height: 85px
+    width: 85px
+    background-color: $hover-color1
+    display: flex
+    justify-content: center
+    align-items: center
+    position: relative
+    cursor: pointer
+    &:hover
+      background-color: $hover-color2
+
+  &__cart_items
+    position: absolute
+    top: 12px
+    right: 12px
+    font-size: 10px
+    font-family: 'Circe Bold', sans-serif
+    color: #ffffff
+
+  &__bot
+    height: 60px
+    background-color: $grey-color
+
+  &__service
+    height: 100%
+    width: 100%
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+  &__service_menu
+    height: 100%
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    list-style-type: none
+    font-size: 16px
+    color: #ffffff
+
+  &__service_item
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    cursor: pointer
+    position: relative
+    &:hover
+      color: $hover-color1
+      .dropdown_menu
+        display: block
+        opacity: 1
+
+  .dropdown_menu
+    display: none
+    position: absolute
+    min-width: 256px
+    height: auto
+    padding: 28px
+    background-color: $color_white
+    border-top: 4px solid $hover-color1
+    color: #000
+    top: 100%
+    left: -28px
+    z-index: 10
+    opacity: 0
+    transition: all .5s ease
+    ul
+      height: 100%
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      list-style-type: none
+      li
+        margin-bottom: 10px
+      li:nth-last-child(1)
+        margin: 0
+      li:hover
+        color: $hover-color1
+
+  &__sale
+    width: 160px
+    background-color: $pink-color
